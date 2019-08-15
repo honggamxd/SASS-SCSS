@@ -1,29 +1,3 @@
-.text-header-banner,
-.text-area h3,
-.text-area h1 {
-  font-size: 48px;
-  margin: 0 auto;
-  font-family: FuturaLT-Bold;
-}
-
-.title-text,
-.made-with-love h2,
-.text-center h2,
-.our-service h2,
-.text-left h3 {
-  margin: 0 auto;
-  font-size: 24px;
-  font-family: FuturaLT-Bold;
-  color: #222222;
-}
-
-.paragraph,
-.text-center p,
-.text-left p {
-  font-size: 14px;
-  color: #222222;
-}
-
 @font-face {
   src: url(/fonts/FuturaLT.ttf?11f68b85b54bc53a7344b1a9bc814435);
   font-family: FuturaLT;
@@ -119,6 +93,32 @@ li img {
 
 .fa-search {
   color: #ffcb0f;
+}
+
+.text-header-banner,
+.text-area h3,
+.text-area h1 {
+  font-size: 48px;
+  margin: 0 auto;
+  font-family: FuturaLT-Bold;
+}
+
+.title-text,
+.made-with-love h2,
+.text-center h2,
+.our-service h2,
+.text-left h3 {
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: FuturaLT-Bold;
+  color: #222222;
+}
+
+.paragraph,
+.text-center p,
+.text-left p {
+  font-size: 14px;
+  color: #222222;
 }
 
 .button {
