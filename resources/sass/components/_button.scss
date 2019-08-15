@@ -1,0 +1,30 @@
+.button {
+  @include style-button;
+  background-color: $primary-color;
+  width: 120px;
+  height: 35px;
+  font-size: 12px;
+}
+.button-right {
+  margin-left: 8%;
+}
+.contact-input button {
+  @include style-button;
+  background-color: rgb(47, 50, 64);
+  width: 20%;
+  height: 45px;
+  margin-left: 5px;
+
+
+  &:hover {
+    background-color: firebrick;
+    cursor:pointer;
+    @include easeOut;
+  }
+}
+button:hover {
+  background-color: #f2f2f2;
+  color: $primary-color;
+  cursor:pointer;
+  @include easeOut;
+}

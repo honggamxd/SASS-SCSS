@@ -1,0 +1,161 @@
+.made-with-love {
+  @include style-base-layout;
+  display: block;
+  background-image: url("../images/Layer 3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2 {
+    @extend .title-text;
+    padding: 5% 0% 0% 0%;
+    text-align: center;
+    color: $white-color;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    color: $white-color;
+  }
+
+  nav {
+    padding: 40px;
+
+    a {
+      font-size: 14px;
+      font-family: FuturaLT;
+      color: $white-color;
+      display: inline-block;
+      padding: 1.0em;
+
+      &:hover{
+        background-color: #222533;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+.item-2 {
+  flex-basis: 50%;
+  height: 100%;
+}
+.item-8 {
+  flex-basis: 50%;
+  height: 100%;
+
+  img {
+    width: 96%;
+    height: 203px;
+    float: right;
+  }
+}
+.item-6{
+  flex-basis: 50%;
+
+  img {
+    height: 415px;
+    width: 100%;
+  }
+}
+
+figure{
+  margin: 0;
+  padding: 0;
+
+  &:hover img {
+    opacity: 1;
+    -webkit-animation: flash 2.5s;
+    animation: flash 2.5s;
+    @include easeOut;
+  }
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Slide show img
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+  max-width: 100%;
+}
+.mySlides img {
+  margin-top: 3%;
+  max-height: 450px;
+  width: 55%;
+  text-align: center;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: $white-color;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  color: $white-color;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: $gray-color;
+  text-decoration: none;
+  cursor: pointer;
+}

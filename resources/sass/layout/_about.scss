@@ -1,0 +1,45 @@
+.about-com {
+  @include style-base-layout;
+  display: block;
+}
+.company {
+  padding: 0;
+}
+.text-left {
+  width: 70%;
+  text-align: left;
+  display: inline-block;
+  padding: 2% 0% 10% 0% ;
+
+  h2 {
+    font-size: 32px;
+    font-family: FuturaLT-Bold;
+    margin: 0 auto;
+    padding-top: 10%;
+    color: $primary-color;
+  }
+
+  h3 {
+    font-weight: 400;
+    padding-bottom: 1%;
+    @extend .title-text ;
+  }
+
+  p {
+    @extend .paragraph;
+  }
+}
+
+.bg-right {
+  width: 30%;
+  display: inline-block;
+  background-image: url("../images/Layer 2.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  float: right;
+
+  img {
+    margin-left: 18%;
+    max-height: 422px;
+  }
+}

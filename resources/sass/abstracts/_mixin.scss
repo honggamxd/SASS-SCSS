@@ -1,0 +1,24 @@
+@mixin style-input {
+  border-radius: 10px;
+  background-color: $white-color;
+  height: 45px;
+  border: none;
+  padding-left: 10px;
+}
+
+@mixin style-button {
+  border-radius: 10px;
+  text-align: center;
+  font-family: FuturaLT-Bold;
+  color: $white-color;
+  border: none;
+}
+
+@mixin style-base-layout {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}

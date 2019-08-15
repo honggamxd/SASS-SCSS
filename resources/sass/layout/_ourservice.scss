@@ -1,0 +1,41 @@
+.our-service {
+  @include style-base-layout;
+  background-color: #fafff8;
+  display: block;
+}
+.our-service h2 {
+  padding: 5% 0% 3% 0%;
+  text-align: center;
+  @extend .title-text;
+}
+.item-3 {
+  flex-basis: 33%;
+
+  img {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    height: 45%;
+    padding: 3% 0%;
+  }
+
+  h4 {
+    margin-left: 5%;
+    font-size: 15px;
+    font-family: FuturaLT-Bold;
+    color: #222222;
+  }
+
+  p {
+    font-size: 14px ;
+    color: #222222;
+    float: left;
+    padding: 0% 5% 2% 5%;
+  }
+  &.button {
+    margin-left: 5%;
+  }
+}
+
+.know {
+  padding-bottom: 10%;
+}

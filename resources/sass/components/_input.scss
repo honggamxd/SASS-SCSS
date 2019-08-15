@@ -1,0 +1,17 @@
+.item-2 {
+  input{
+    @include style-input;
+    margin: 10% 0 5% 0;
+    width: 90%;
+  }
+}
+.contact-input{
+  margin-right: 10px;
+  padding-bottom: 10px;
+
+  input{
+    @include style-input;
+    margin: 2% 2% 5% 0;
+    width: 72%;
+  }
+}

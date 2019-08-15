@@ -1,0 +1,44 @@
+.banner {
+ @include style-base-layout;
+  background-image: url("../images/Layer 9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-background {
+  @include style-base-layout;
+  position: absolute;
+  background-color: #333333;
+  opacity: 0.2;
+}
+.text-area {
+  text-align: center;
+  padding: 8% 5% 6% 5%;
+
+  h1 {
+    @extend .text-header-banner;
+    padding: 2% 0 10px 0;
+    color: $white-color;
+  }
+
+  h3 {
+    @extend .text-header-banner;
+    color: $primary-color;
+  }
+
+  h2 {
+    font-family: FuturaLT;
+    font-size: 30px;
+    font-weight: 100;
+    color: $white-color;
+  }
+
+  p {
+    font-size: 16px;
+    color: $white-color;
+  }
+}
+
+.more{
+  text-align: center;
+  padding: 0 5% 15% 5%;
+}

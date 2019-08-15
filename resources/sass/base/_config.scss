@@ -1,0 +1,111 @@
+@font-face {
+  src:url('../fonts/FuturaLT.ttf');
+  font-family: FuturaLT ;
+}
+@font-face {
+  src:url('../fonts/FuturaLT-Bold.ttf');
+  font-family: FuturaLT-Bold ;
+}
+.main{
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: FuturaLT;
+  background: #f3f3f3;
+  font-size: 14px;
+}
+p {
+  word-break: break-word;
+}
+a {
+  text-decoration: none;
+  color: $p-color;
+  padding: 1.5em 0;
+}
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+}
+.container {
+  display: flex;
+  padding: 0% 0% 10% 0%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.container-made {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2%;
+}
+.container-tac {
+  display: flex;
+}
+
+li img {
+  border-radius: 50%;
+  max-width: 20%;
+  margin-left: 0;
+  display: inline-block;
+  float: left;
+}
+
+.fa-facebook-f:hover{
+  color: #3046b7;
+}
+.fa-twitter:hover{
+  color: #00a2f1;
+}
+.fa-youtube:hover{
+  color: #cb092c;
+}
+.fa-linkedin-in:hover{
+  color: #170d83;
+}
+.fa-google-plus-g:hover{
+  color: #cb092c;
+}
+.fa-behance:hover{
+  color: #3046b7;
+}
+.fa-volleyball-ball:hover{
+  color: #e36309;
+}
+.fa-search{
+  color: #ffcb0f;
+}
+
+//Responsive
+@mixin mediaSm {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (max-width: 992px) and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mediaNormal {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
