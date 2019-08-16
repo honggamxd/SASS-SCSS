@@ -20,10 +20,6 @@ body {
   font-size: 14px;
 }
 
-p {
-  word-break: break-word;
-}
-
 a {
   text-decoration: none;
   color: #222222;
@@ -31,8 +27,8 @@ a {
 }
 
 .content {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
   height: auto;
 }
 
@@ -173,6 +169,7 @@ button:hover {
   background-color: #f3f3f3;
   height: 45px;
   border: none;
+  outline: none;
   padding-left: 10px;
   margin: 10% 0 5% 0;
   width: 90%;
@@ -187,6 +184,7 @@ button:hover {
   background-color: #f3f3f3;
   height: 45px;
   border: none;
+  outline: none;
   padding-left: 10px;
   margin: 2% 2% 5% 0;
   width: 72%;
@@ -234,6 +232,8 @@ button:hover {
   margin-left: 10px;
 }
 .social-icon i:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
@@ -314,32 +314,37 @@ button:hover {
 }
 
 .text-left {
-  width: 70%;
+  width: 60%;
   text-align: left;
   display: inline-block;
   padding: 2% 0% 10% 0%;
 }
 .text-left h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-family: FuturaLT-Bold;
   margin: 0 auto;
-  padding-top: 10%;
+  padding-top: 8%;
   color: #ffcb0f;
 }
 .text-left h3 {
   font-weight: 400;
   padding-bottom: 1%;
+  font-size: 22px;
 }
+.text-left p {
+  margin-right: 3px;
+}
+
 .bg-right {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   background-image: url("../images/Layer 2.png");
   background-repeat: no-repeat;
-  background-position: 5px;
+  background-position: 15%;
   float: right;
 }
 .bg-right img {
-  margin-left: 18%;
+  margin-left: 25%;
   max-height: 422px;
 }
 
@@ -383,6 +388,9 @@ button:hover {
 .know {
   padding-bottom: 10%;
 }
+.know .button {
+  margin-left: 5%;
+}
 
 .Why-chose-us {
   margin: 0 auto;
@@ -393,10 +401,11 @@ button:hover {
 
 .text-center {
   text-align: center;
-  padding: 5% 0% 5% 0%;
+  padding: 5% 0% 0% 0%;
 }
 .item-4 {
   flex-basis: 25%;
+  margin: 2% 0 0;
 }
 .item-4 h4 {
   font-size: 15px;
@@ -409,22 +418,26 @@ button:hover {
   color: #f3f3f3;
   margin: 2px 0px;
 }
+.item-4 p {
+  margin: 0 5%;
+  text-align: center;
+}
 .item-4 a {
   color: #e5e5e5;
   padding-bottom: 1.5em;
 }
 
 .bo-1 {
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   background: #ffea9f;
   border-radius: 90px;
   margin: 0 auto;
 }
 
 .bo-2 {
-  width: 110px;
-  height: 110px;
+  width: 140px;
+  height: 140px;
   position: absolute;
   margin: 10px 10px;
   background: #fadb64;
@@ -432,8 +445,8 @@ button:hover {
 }
 
 .bo-3 {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   position: absolute;
   margin: 10px 10px;
   background: #ffcb0f;
@@ -441,18 +454,18 @@ button:hover {
 }
 
 .bo-4 {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   margin: 10px 10px;
   background: #ffffff;
   border-radius: 80px;
 }
 .bo-4 img {
-  margin-top: 21px;
-  margin-left: 22px;
-  width: 25px;
-  height: 25px;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .made-with-love {
@@ -483,7 +496,7 @@ button:hover {
   font-family: FuturaLT;
   color: #f3f3f3;
   display: inline-block;
-  padding: 1em;
+  padding: 0.5em 1em;
 }
 .made-with-love nav a:hover {
   transition: all 0.5s ease-out;
@@ -519,6 +532,7 @@ figure {
   padding: 0;
 }
 figure:hover img {
+  cursor: pointer;
   opacity: 1;
   -webkit-animation: flash 2.5s;
   animation: flash 2.5s;
@@ -558,15 +572,17 @@ figure:hover img {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 70%;
+  width: 50%;
   max-width: 100%;
 }
 
 .mySlides img {
+  position: relative;
   margin-top: 3%;
-  max-height: 450px;
-  width: 55%;
-  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 400px;
 }
 
 .next {
@@ -793,7 +809,7 @@ figure:hover img {
 }
 .item-85 span {
   float: left;
-  margin-left: 10%;
+  margin-left: 15px;
   display: block;
 }
 
@@ -822,7 +838,7 @@ figure:hover img {
 .item-4-footer-2 a {
   color: #e5e5e5;
   font-size: 14px;
-  padding-left: 5%;
+  padding-left: 5px;
 }
 
 .item-4-footer {
@@ -881,7 +897,7 @@ footer {
 footer .footer-text {
   text-align: center;
   font-size: 14px;
-  padding: 20px;
+  padding: 35px;
 }
 footer p {
   display: inline;
@@ -896,9 +912,13 @@ footer h6 {
 
 @media screen and (min-width: 1200px) {
   .content {
-    max-width: 960px;
+    max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .item-4 p {
+    margin: 0 10%;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 576px) {
@@ -923,8 +943,9 @@ footer h6 {
   }
 }
 @media screen and (max-width: 992px) {
-  .explor {
-    margin-left: 0%;
+  .explor li {
+    width: 45%;
+    display: inline-block;
   }
 
   .special {
@@ -949,6 +970,19 @@ footer h6 {
 
   .made-with-love nav {
     padding: 30px 0px 20px 0px;
+  }
+
+  .item-4 {
+    padding-top: 45px;
+  }
+
+  .bg-right {
+    display: none;
+  }
+
+  .text-left {
+    margin: 0% 10%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1064,11 +1098,6 @@ footer h6 {
     margin: 0 auto;
   }
 
-  .explor li {
-    width: 45%;
-    display: inline-block;
-  }
-
   .item-3 {
     flex-basis: 95%;
     margin: 0 auto;
@@ -1129,17 +1158,29 @@ footer h6 {
     padding-bottom: 0px;
   }
 
-  .mySlides img {
-    height: 50%;
+  .modal-content {
+    width: 70%;
   }
 }
 @media screen and (min-width: 768px) {
   #menu {
     display: none;
   }
+
+  .item-5 {
+    flex-basis: 15%;
+  }
+
+  .about-com {
+    height: 422px;
+  }
 }
 @media screen and (min-width: 992px) {
   .container {
     flex-wrap: nowrap;
+  }
+
+  .explor {
+    margin-left: 10%;
   }
 }

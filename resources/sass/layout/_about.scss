@@ -6,16 +6,16 @@
   padding: 0;
 }
 .text-left {
-  width: 70%;
+  width: 60%;
   text-align: left;
   display: inline-block;
   padding: 2% 0% 10% 0% ;
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-family: FuturaLT-Bold;
     margin: 0 auto;
-    padding-top: 10%;
+    padding-top: 8%;
     color: $primary-color;
   }
 
@@ -23,23 +23,25 @@
     font-weight: 400;
     padding-bottom: 1%;
     @extend .title-text ;
+    font-size: 22px;
   }
 
   p {
     @extend .paragraph;
+    margin-right: 3px;
   }
 }
 
 .bg-right {
-  width: 30%;
+  width: 40%;
   display: inline-block;
   background-image: url("../images/Layer 2.png");
   background-repeat: no-repeat;
-  background-position: 5px;
+  background-position: 15%;
   float: right;
 
   img {
-    margin-left: 18%;
+    margin-left: 25%;
     max-height: 422px;
   }
 }

@@ -1,9 +1,14 @@
 
 @include mediaXl {
   .content {
-    max-width: 960px ;
+    max-width: 1120px ;
     margin-left: auto;
     margin-right: auto;
+  }
+  .item-4 {
+    p {
+      margin: 0 10%;
+    }
   }
 }
 
@@ -28,7 +33,10 @@
 
 @include mediaNormal {
   .explor {
-    margin-left: 0%;
+    li {
+      width: 45%;
+      display: inline-block;
+    }
   }
   .special {
     margin-top: 0 ;
@@ -51,6 +59,16 @@
   }
   .made-with-love nav {
     padding: 30px 0px 20px 0px;
+  }
+  .item-4 {
+    padding-top: 45px;
+  }
+  .bg-right {
+    display: none;
+  }
+  .text-left {
+    margin: 0% 10%;
+    width: 80%;
   }
 }
 
@@ -126,6 +144,7 @@
       }
     }
   }
+
   .nav__item {
     display: list-item;
     width: 100%;
@@ -155,10 +174,6 @@
   .item-4, .item-4-footer-2, .item-4-footer {
     flex-basis: 80%;
     margin: 0 auto;
-  }
-  .explor li{
-    width: 45%;
-    display: inline-block;
   }
   .item-3 {
     flex-basis: 95%;
@@ -211,8 +226,8 @@
   .item-2 .container-made {
     padding-bottom: 0px;
   }
-  .mySlides img {
-    height: 50%;
+  .modal-content {
+    width: 70%;
   }
 }
 
@@ -221,10 +236,19 @@
   #menu{
     display:none ;
   }
+  .item-5 {
+    flex-basis: 15%;
+  }
+  .about-com {
+    height: 422px;
+  }
 }
 @media screen and (min-width: 992px){
   .container{
     flex-wrap: nowrap;
+  }
+  .explor {
+    margin-left: 10%;
   }
 }
 
