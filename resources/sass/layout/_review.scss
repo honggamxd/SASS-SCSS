@@ -55,6 +55,14 @@
   margin: 10% auto;
   text-align: center;
 
+  figure img {
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  figure:hover img {
+    width: 90px;
+  }
+
   h5 {
     margin: 0 auto;
   }

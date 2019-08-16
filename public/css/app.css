@@ -486,6 +486,7 @@ button:hover {
   padding: 1em;
 }
 .made-with-love nav a:hover {
+  transition: all 0.5s ease-out;
   background-color: #222533;
   border-radius: 50px;
 }
@@ -670,6 +671,12 @@ figure:hover img {
   width: 30%;
   margin: 10% auto;
   text-align: center;
+}
+.icon-img figure img {
+  transition: 0.3s ease-in-out;
+}
+.icon-img figure:hover img {
+  width: 90px;
 }
 .icon-img h5 {
   margin: 0 auto;

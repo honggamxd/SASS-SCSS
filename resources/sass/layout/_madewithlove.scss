@@ -32,6 +32,7 @@
       padding: 1.0em;
 
       &:hover{
+        @include easeOut;
         background-color: #222533;
         border-radius: 50px;
       }
@@ -62,7 +63,7 @@
   }
 }
 
-figure{
+figure {
   margin: 0;
   padding: 0;
 
