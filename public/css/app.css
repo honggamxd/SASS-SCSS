@@ -307,11 +307,10 @@ button:hover {
 }
 
 .input-search {
-  display: none;
-}
-
-.input-search.open {
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  overflow: hidden;
   position: absolute;
   top: 20px;
   right: 10%;
@@ -325,7 +324,12 @@ button:hover {
   width: 425px;
   z-index: 10;
   transition: all 0.5s ease-out;
-  transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, -150%, 0);
+}
+
+.input-search.open {
+  top: 68px;
+  transform: translate3d(0, 0, 0);
 }
 
 .banner {
