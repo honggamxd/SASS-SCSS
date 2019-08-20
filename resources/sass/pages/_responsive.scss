@@ -59,6 +59,10 @@
   .bg-right {
     display: none;
   }
+  .text-left {
+    margin: 0% 10%;
+    width: 80%;
+  }
 }
 
 @include mediaMd {
@@ -85,13 +89,6 @@
   .text-area {
     margin-left: 0px ;
     margin-right: 0px;
-  }
-  .bg-right {
-    display: none;
-  }
-  .text-left {
-    margin: 0% 10%;
-    width: 80%;
   }
   #first {
     margin-left: 25px;
@@ -156,6 +153,10 @@
   }
   form {
     text-align: center;
+  }
+  .input-search.open {
+    width: 280px;
+    right: 7%;
   }
   .contact-input {
     button {

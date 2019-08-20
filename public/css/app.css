@@ -291,7 +291,7 @@ button:hover {
 }
 .tabnav nav {
   float: right;
-  padding-top: 3%;
+  padding-top: 30px;
 }
 .tabnav nav a {
   color: #f3f3f3;
@@ -302,8 +302,11 @@ button:hover {
   color: #ffcb0f;
 }
 
+#search {
+  width: 20px;
+}
+
 .input-search {
-  transform: translate(500px, 54px);
   display: none;
 }
 
@@ -312,7 +315,6 @@ button:hover {
   position: absolute;
   top: 20px;
   right: 10%;
-  transition: all 0.5s ease-out;
   border-radius: 10px;
   background-color: #f3f3f3;
   font-family: FuturaLT;
@@ -322,6 +324,7 @@ button:hover {
   padding-left: 10px;
   width: 425px;
   z-index: 10;
+  transition: all 0.5s ease-out;
   transform: translate3d(0, 100%, 0);
 }
 
@@ -1099,6 +1102,11 @@ footer h6 {
   .bg-right {
     display: none;
   }
+
+  .text-left {
+    margin: 0% 10%;
+    width: 80%;
+  }
 }
 @media screen and (max-width: 767px) {
   .container-made .item-8 {
@@ -1127,15 +1135,6 @@ footer h6 {
   .text-area {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .bg-right {
-    display: none;
-  }
-
-  .text-left {
-    margin: 0% 10%;
-    width: 80%;
   }
 
   #first {
@@ -1200,6 +1199,11 @@ footer h6 {
 
   form {
     text-align: center;
+  }
+
+  .input-search.open {
+    width: 280px;
+    right: 7%;
   }
 
   .contact-input button {
