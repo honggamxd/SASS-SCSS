@@ -1,12 +1,16 @@
 .button {
   @include style-button;
   background-color: $primary-color;
-  width: 120px;
-  height: 35px;
-  font-size: 12px;
+  font-family: FuturaLT;
+  padding: 0.8em 1.5em;
+  font-size: 14px;
+}
+.button-left {
+  font-family: FuturaLT-Bold;
 }
 .button-right {
   margin-left: 8%;
+  font-family: FuturaLT-Bold;
 }
 .contact-input button {
   @include style-button;
@@ -14,6 +18,7 @@
   width: 20%;
   height: 45px;
   margin-left: 5px;
+  font-family: FuturaLT;
 
 
   &:hover {

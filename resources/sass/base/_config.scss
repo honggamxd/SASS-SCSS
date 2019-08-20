@@ -18,22 +18,28 @@ body {
   background: #f3f3f3;
   font-size: 14px;
 }
-//p {
-//  word-break: break-word;
-//}
+p {
+  letter-spacing: 0.4px;
+}
 a {
   text-decoration: none;
   color: $p-color;
   padding: 1.5em 0;
+  letter-spacing: 0.4px;
 }
 .content {
   margin-left: 7%;
   margin-right: 7%;
   height: auto;
 }
+.content-about {
+  margin-left: 7%;
+  margin-right: 3%;
+  height : auto;
+}
 .container {
   display: flex;
-  padding: 0% 0% 10% 0%;
+  padding-bottom: 80px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -107,5 +113,32 @@ li img {
 @mixin mediaXl {
   @media screen and (min-width: 1200px) {
     @content;
+  }
+}
+
+
+.navigation.open {
+  z-index: 10;
+  background-color: rgb(34, 37, 51);
+  opacity: 0.9;
+  width: 150px;
+  margin-top: 40px ;
+  right: 10%;
+  height: auto;
+  position: absolute;
+  transition: transform 0.3s ease;
+  display: block;
+  transform: translate(0px, 70px);
+  -webkit-transform: translate(0, 0);
+
+  a {
+    max-width: 100px;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1%;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 }

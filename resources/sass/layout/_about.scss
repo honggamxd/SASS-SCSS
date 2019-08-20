@@ -6,23 +6,21 @@
   padding: 0;
 }
 .text-left {
-  width: 60%;
+  width: 55%;
   text-align: left;
   display: inline-block;
-  padding: 2% 0% 10% 0% ;
+  padding-bottom: 30px;
 
   h2 {
     font-size: 30px;
     font-family: FuturaLT-Bold;
     margin: 0 auto;
-    padding-top: 8%;
+    padding-top: 70px;
     color: $primary-color;
   }
 
   h3 {
-    font-weight: 400;
-    padding-bottom: 1%;
-    @extend .title-text ;
+    @extend .title-text;
     font-size: 22px;
   }
 
@@ -33,7 +31,7 @@
 }
 
 .bg-right {
-  width: 40%;
+  width: 45%;
   display: inline-block;
   background-image: url("../images/Layer 2.png");
   background-repeat: no-repeat;
@@ -41,7 +39,7 @@
   float: right;
 
   img {
-    margin-left: 25%;
+    margin-left: 30%;
     max-height: 422px;
   }
 }

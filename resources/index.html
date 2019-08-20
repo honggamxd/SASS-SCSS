@@ -47,8 +47,11 @@
                     <a class="nav__item" href="">Portfolio</a>
                     <a class="nav__item" href="">Component</a>
                     <a class="nav__item" href="">Contact</a>
-                    <a class="nav__item" href=""><i class="fas fa-search"></i></a>
+                    <a class="nav__item" id="search" onclick="showSearch()" ><i class="fas fa-search"></i></a>
                 </nav>
+                <form id="input-search">
+                    <input class="input-search" type="text" placeholder="Search" required>
+                </form>
             </div>
         </div>
     </header>
@@ -78,7 +81,7 @@
     </div>
 
     <div class="about-com">
-        <div class="content">
+        <div class="content-about">
             <div class="text-left">
                 <h2>WELCOME TO OUR COMPANY</h2>
                 <h3> Aliquam lacus purus, auctor malesuada</h3>
@@ -96,7 +99,7 @@
                     aliquid
                     ex ea
                     commodi consequatur? </p>
-                <button class="button button-left">KNOW MORE</button>
+                <button class="button">KNOW MORE</button>
             </div>
             <div class="bg-right">
                 <img src="images/Layer%2016.png">
@@ -186,7 +189,7 @@
                         <button class="button">KNOW MORE</button>
                     </div>
                 </div>
-                <div class="item-3">
+                <div class="item-3 item-last">
                     <figure><img src="images/Layer%206.png"></figure>
                     <h4>RENOVATION</h4>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
@@ -198,7 +201,7 @@
                         <button class="button">KNOW MORE</button>
                     </div>
                 </div>
-                <div class="item-3">
+                <div class="item-3 item-last">
                     <figure><img src="images/Layer%208.png"></figure>
                     <h4>ARCHITECTURE</h4>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
@@ -307,9 +310,7 @@
                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                                 consequuntur
                                 magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem
-                                ipsum
-                                quia dolor sit amet,</p>
+                                amet, consectetur, adipisci velit,</p>
                         </div>
                         <div class="box-left"></div>
                     </div>
@@ -327,7 +328,7 @@
                                 magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
                                 dolorem
                                 ipsum
-                                quia dolor sit ame,</p>
+                                quia dolor sit ame, consectetur, adipisci velit,</p>
                         </div>
                         <div class="box-center"></div>
                     </div>
@@ -343,9 +344,7 @@
                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                                 consequuntur
                                 magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                                dolorem
-                                ipsum
-                                quia dolor sit amet,</p>
+                                 amet, consectetur, adipisci velit,</p>
                         </div>
                         <div class="box-left"></div>
                     </div>
@@ -450,14 +449,41 @@
                 <div class="item-4-footer">
                     <div class="text-margin-left"> <h2>Latest post</h2> </div>
                     <ul>
-                        <li><a href="#"><img src="images/footer-png.png">
-                            <span>Luptatum omittantur duo ne mpetus indoctum</span></a>
+                        <li><a href="#">
+                            <div class="circle-1">
+                                <div class="circle-2">
+                                    <span class="ct-ft2 ct-latest-number">20</span>
+                                    <span class="ct-ft2 ct-latest-word">AUG</span>
+                                </div>
+                            </div>
+                            <span class="last-post">Luptatum omittantur duo ne mpetus indoctum</span></a>
                         </li>
-                        <li><a href="#"><img src="images/footer-png.png"><span>Luptatum omittantur duo ne mpetus indoctum</span></a>
+                        <li><a href="#">
+                            <div class="circle-1">
+                                <div class="circle-2">
+                                    <span class="ct-ft2 ct-latest-number">20</span>
+                                    <span class="ct-ft2 ct-latest-word">AUG</span>
+                                </div>
+                            </div>
+                            <span class="last-post">Luptatum omittantur duo ne mpetus indoctum</span></a>
                         </li>
-                        <li><a href="#"><img src="images/footer-png.png"><span>Luptatum omittantur duo ne mpetus indoctum</span></a>
+                        <li><a href="#">
+                            <div class="circle-1">
+                                <div class="circle-2">
+                                    <span class="ct-ft2 ct-latest-number">20</span>
+                                    <span class="ct-ft2 ct-latest-word">AUG</span>
+                                </div>
+                            </div>
+                            <span class="last-post">Luptatum omittantur duo ne mpetus indoctum</span></a>
                         </li>
-                        <li><a href="#"><img src="images/footer-png.png"><span>Luptatum omittantur duo ne mpetus indoctum</span></a>
+                        <li><a href="#">
+                            <div class="circle-1">
+                            <div class="circle-2">
+                                <span class="ct-ft2 ct-latest-number">20</span>
+                                <span class="ct-ft2 ct-latest-word">AUG</span>
+                            </div>
+                        </div>
+                            <span class="last-post">Luptatum omittantur duo ne mpetus indoctum</span></a>
                         </li>
                     </ul>
                 </div>

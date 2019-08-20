@@ -5,20 +5,12 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .item-4 {
-    p {
-      margin: 0 10%;
-    }
-  }
 }
 
 @include mediaLg {
   .item-4, .item-4-footer-2, .item-4-footer{
     flex-basis: 50%;
     margin: 0 auto;
-  }
-  .know {
-    padding-bottom: 50%;
   }
   .review-left {
     height: 270px;
@@ -52,6 +44,7 @@
     button {
       width: 30%;
       margin-left: 35%;
+      margin-top: 20px;
     }
   }
   .text-area {
@@ -65,10 +58,6 @@
   }
   .bg-right {
     display: none;
-  }
-  .text-left {
-    margin: 0% 10%;
-    width: 80%;
   }
 }
 
@@ -107,7 +96,7 @@
   #first {
     margin-left: 25px;
   }
-  .content {
+  .content, .content-about {
     margin-left: 3%;
     margin-right: 3%;
   }
@@ -161,11 +150,21 @@
 // Smartphones
 @include mediaSm {
   .know {
-    padding-bottom: 40px;
+    .button {
+      margin-top: 10px;
+    }
+  }
+  form {
+    text-align: center;
+  }
+  .contact-input {
+    button {
+      margin-left: 0;
+    }
   }
   .item-2 input{
-    width: 100%;
-    margin: 2% 0% 3% 2%;
+    width: 300px;
+    margin-top: 20px  ;
   }
   .social-icon {
     width: 100%;
@@ -178,27 +177,31 @@
   .item-3 {
     flex-basis: 95%;
     margin: 0 auto;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+  .item-last {
+    padding-top: 50px;
   }
   .review-left, .review-center{
-    height: 180px;
+    height: 200px;
     margin: 8% 3% 0% 3%;
 
     img {
-      /*max-width: 10%;*/
-      max-width: 30px;
-      max-height: 20px;
+      margin-top: 20px;
+      max-width: 40px;
+      max-height: 30px;
     }
 
     p {
-      margin: 0px 0px 20px 20px;
+      margin: 20px 0px 20px 10px;
     }
   }
   .item-2 {
     flex-basis: 95%;
-  }
-  .item-3 img {
-    width: 90%;
-    height: auto;
   }
   .text-area h1, .text-area h3{
     font-size: 28px;
@@ -250,5 +253,10 @@
   .explor {
     margin-left: 10%;
   }
+}
+@media screen and (max-width: 410px){
+ .button {
+   padding: 0.8em 0.7em;
+ }
 }
 

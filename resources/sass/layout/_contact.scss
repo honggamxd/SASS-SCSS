@@ -4,18 +4,20 @@
   background-color: $primary-color;
   opacity: 0.75;
 
-  h2 {
-    font-size: 22px;
-    margin-top: 8%;
+  .item-2 h2 {
+    font-size: 24px;
+    margin: 0 auto;
+    padding-top: 8%;
     text-align: center;
     font-family: FuturaLT-Bold;
     color: $p-color;
   }
 
-  h1 {
-    font-size: 26px;
-    margin-top: 5%;
+  .item-2 h1 {
+    font-family: FuturaLT;
+    font-size: 32px;
     text-align: center;
     color: $p-color;
+    margin: 0 auto;
   }
 }

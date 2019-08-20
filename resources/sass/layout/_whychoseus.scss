@@ -1,11 +1,11 @@
-.Why-chose-us{
+.Why-chose-us {
   @include style-base-layout;
   background-color: #f2f7fa;
   display: block;
 }
 .text-center {
   text-align: center;
-  padding: 5% 0% 0% 0%;
+  padding: 60px 0 0 0;
 
   h2 {
     @extend .title-text ;
@@ -34,8 +34,11 @@
   }
 
   p {
-    margin: 0 5%;
+    width: 180px;
+    word-break: break-word;
     text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
   }
 
   a {
@@ -45,41 +48,41 @@
 }
 
 .bo-1 {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   background: #ffea9f;
   border-radius: 90px;
   margin: 0 auto;
 }
 .bo-2 {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   position: absolute;
   margin: 10px 10px;
   background: #fadb64;
   border-radius: 80px;
 }
 .bo-3 {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  margin: 10px 10px;
+  background: #ffcb0f;
+  border-radius: 70px;
+}
+.bo-4 {
   width: 120px;
   height: 120px;
   position: absolute;
   margin: 10px 10px;
-  background: #ffcb0f;
-  border-radius: 80px;
-}
-.bo-4 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 10px 10px;
   background: #ffffff;
-  border-radius: 80px;
+  border-radius: 60px;
 
   img {
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 40px;
-    height: 40px;
+    margin-top: 35px;
+    margin-left: 35px;
+    width: 50px;
+    height: 50px;
   }
 }
 

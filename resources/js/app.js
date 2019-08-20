@@ -69,6 +69,25 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
+var check_search = true;
+
+function showSearch() {
+    var search = document.querySelector('#search');
+    var input_search = document.querySelector('.input-search');
+    var main = document.querySelector('main');
+
+    if(check_search) {
+        search.addEventListener('click', function() {
+            input_search.classList.toggle('open');
+        });
+        check_search = false;
+    } else {
+        main.addEventListener('click', function() {
+            input_search.classList.remove('open');
+        });
+        check_search = true;
+    }
+}
 
 
 

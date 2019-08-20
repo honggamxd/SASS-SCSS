@@ -73,3 +73,19 @@
     }
   }
 }
+
+.input-search {
+  transform: translate(500px,54px);
+  display: none;
+}
+.input-search.open {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  @include easeOut;
+  @include style-input;
+  width: 425px;
+  z-index: 10;
+  transform: translate3d(0, 100%, 0);
+}

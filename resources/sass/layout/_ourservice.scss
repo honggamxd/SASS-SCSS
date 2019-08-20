@@ -4,18 +4,18 @@
   display: block;
 }
 .our-service h2 {
-  padding: 5% 0% 3% 0%;
+  padding-top: 60px;
   text-align: center;
   @extend .title-text;
 }
 .item-3 {
   flex-basis: 33%;
+  padding-top: 40px;
 
   img {
     width: 90%;
     margin: 0% 5% 0% 5%;
     height: 45%;
-    padding: 3% 0%;
   }
 
   h4 {
@@ -26,20 +26,18 @@
   }
 
   p {
-    font-size: 14px ;
+    font-size: 14px;
     color: #222222;
     float: left;
+    margin: 0 auto;
     padding: 0% 5% 2% 5%;
   }
-  &.button {
-    margin-left: 5%;
-  }
 }
-
 .know {
-  padding-bottom: 10%;
+  padding-bottom: 0;
 
   .button {
     margin-left: 5%;
+    margin-top: 20px;
   }
 }
